@@ -13,6 +13,3 @@ const Close_Menu = () => {
 
 closeMenu.addEventListener("click", Close_Menu);
 
-
-
-   
