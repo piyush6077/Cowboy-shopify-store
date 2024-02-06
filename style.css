@@ -5,11 +5,14 @@
     list-style-type: none;
 }
 
+
 .main{
     overflow:hidden;
 }
 
 :root{
+    --gutter: 50px;
+    --font-family_G : 'Geologica' , sans-serif;
     --font-family:'Open Sans', sans-serif;
     --color-black: #2a2c2b;
     --header: linear-gradient(224deg,#eee5d3 20%,#fdeded 81.18%);
@@ -17,6 +20,7 @@
     --thirdContainer: linear-gradient(247.2deg,#e3e5fc 8.64%,#f7f8fc 52.48%,#efeeeb 86.51%);;
     --fourthContainer: linear-gradient(259.28deg,#fcfaf4 15.32%,#d6dbd2 100.3%);
 }
+
 
 .cont-flex{
     display: flex;
@@ -31,12 +35,15 @@
 
 .navbar{
     display: flex;
-    width:l00vw;
+    width:98vw;
     line-height:3.5rem;
-    background: var(--header);
+    /* background: var(--header); */
+    background-color: transparent;
     padding: 10px 0;
     font-family: var(--font-family);
     justify-content: space-around;
+    position: absolute;
+    z-index: 999;
 }
 
 .logo{
@@ -105,6 +112,10 @@
     color:rgb(37, 37, 37);
     font-weight: lighter;
     animation:none;
+}
+
+.navElements{
+    color: var(--color-black);
 }
 
 .closeMenu{
@@ -181,16 +192,18 @@
 .header_container{
     display:flex;
     width: 100vw;
-    height: 90vh;
+    height: 680px;
     font-family: 'Roboto';
     background-image: var(--header);
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    padding-top: 2rem;
 }
 
 .header_container_sub1{
     display: flex;
-    width: 45%;
+    width: 48%;
     height: 100%;
     background: transparent;
     align-items: flex-end;
@@ -204,7 +217,8 @@
     width: 45%;
     height: 80%;
     background-color: transparet;
-    padding-left:10rem;
+    padding-left:7rem;
+    padding-top: 4rem;
 }
 
 /* header container div align design completer ----------------- */
@@ -820,6 +834,10 @@
 .footer_footer_end_sub1_elements{
     color:white;
     opacity: 0.8;
+}
+
+.footer_head_info li a:hover{
+    text-decoration: underline;
 }
 
 .footer_footer_end_sub2{
